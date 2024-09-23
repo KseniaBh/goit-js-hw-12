@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Pixabay Search</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
-
-    <load src="./partials/footer.html" />
+    <div class="container">
+      <form class="form">
+        <input class="input" type="text" name="input" />
+        <button class="button" type="submit">Search</button>
+      </form>
+      <ul class="list"></ul>
+      <button class="loadMoreBtn">Load more</button>
+      <span class="loader"></span>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>
