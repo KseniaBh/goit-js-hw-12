@@ -7,8 +7,9 @@ import SortCss from 'postcss-sort-media-queries';
 export default defineConfig(({ command }) => {
   return {
     define: {
-      [command === 'serve' ? 'global' : '_global']: {},
+      [command === 'serve' ? 'global' : '_global']: 'globalThis',
     },
+    
     root: 'src',
     build: {
       sourcemap: true,
@@ -44,5 +45,6 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    
   };
 });
